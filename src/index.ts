@@ -5,5 +5,3 @@ type Foo = [firstName: string, lastName: string];
 type Bar = [firstName: string, lastName: string, '!'];
 
 ['Jane', 'Doe', '!'] satisfies Bar;
-
-console.log('foo');
