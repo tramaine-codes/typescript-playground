@@ -22,3 +22,6 @@ function safeHead<T>(arr: T[], defaultValue: T): T {
 
 assert.deepStrictEqual(safeHead<number>([], 0), 0);
 assert.deepStrictEqual(safeHead(['qux', 'quux'], 'none'), 'qux');
+
+type Two = number & 2;
+2 satisfies Two;
