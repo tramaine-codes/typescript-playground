@@ -15,9 +15,9 @@
   "scripts": {
     "build": "bun run clean && bun test && tsc",
     "clean": "del-cli lib coverage",
-    "format": "biome format --write --no-errors-on-unmatched .",
+    "format": "biome format --fix --no-errors-on-unmatched .",
     "lint": "biome lint --no-errors-on-unmatched .",
-    "lint:fix": "biome lint --apply --no-errors-on-unmatched .",
+    "lint:fix": "biome lint --fix --no-errors-on-unmatched .",
     "prepack": "bun run build",
     "prepare": "husky",
     "release": "release-it --ci",
@@ -27,22 +27,22 @@
     "watch": "tsc -c"
   },
   "devDependencies": {
-    "@biomejs/biome": "1.9.4",
-    "@commitlint/cli": "19.8.0",
-    "@commitlint/config-conventional": "19.8.0",
-    "@release-it/conventional-changelog": "10.0.0",
-    "@types/bun": "1.2.8",
+    "@biomejs/biome": "2.0.6",
+    "@commitlint/cli": "19.8.1",
+    "@commitlint/config-conventional": "19.8.1",
+    "@release-it/conventional-changelog": "10.0.1",
+    "@types/bun": "1.2.18",
     "del-cli": "6.0.0",
     "husky": "9.1.7",
-    "lint-staged": "15.5.0",
-    "release-it": "18.1.2",
+    "lint-staged": "16.1.2",
+    "release-it": "19.0.3",
     "testdouble": "3.20.2",
     "typescript": "5.8.3"
   },
   "dependencies": {
-    "@aws-lambda-powertools/metrics": "2.18.0",
+    "@aws-lambda-powertools/metrics": "2.23.0",
     "htm": "3.1.1",
-    "preact": "10.26.5",
+    "preact": "10.26.9",
     "preact-render-to-string": "6.5.13"
   }
 }
